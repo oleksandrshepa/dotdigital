@@ -1,0 +1,27 @@
+Variable for Magento 2
+
+
+Order Number 
+#{% raw %}{{var order.increment_id}} {% endraw %}
+or
+{{trans "ORDER NUMBER: %increment_id." increment_id=$order.increment_id |raw}}
+
+Shipping Address
+{{var formattedShippingAddress|raw}}
+
+{{var formattedBillingAddress|raw}} 
+
+
+
+{{trans "Hi %name," name=$order_data.customer_name}}
+
+
+
+{{trans 'Your Invoice #%invoice_id' invoice_id=$invoice.increment_id |raw}}
+
+
+{{var payment_html|raw}}
+
+{{var shipping_msg}}
+
+{{trans 'You can view the entire status of your order by checking <a href="%account_url">your account</a>.' account_url=$this.getUrl($store,'customer/account/',[_nosid:1]) |raw}}
