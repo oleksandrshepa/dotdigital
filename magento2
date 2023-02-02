@@ -1,5 +1,5 @@
-Variable for Magento 2
-
+Variable for Magento 2 and DotDigital
+https://support.dotdigital.com/hc/en-gb/articles/360017202719-Magento-variables-for-transactional-email-templates
 
 Order Number 
 #{% raw %}{{var order.increment_id}} {% endraw %}
