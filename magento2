@@ -12,6 +12,8 @@ Shipping Address
 {% raw %}{{var formattedBillingAddress|raw}} {% endraw %}
 
 
+{% raw %} {{trans "Dear %first_name," first_name=$order.getCustomerFirstname()}} {% endraw %}
+
 
 {% raw %}{{trans "Hi %name," name=$order_data.customer_name}}{% endraw %}
 
