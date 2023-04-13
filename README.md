@@ -17,11 +17,14 @@ Here I saved some special code for a DotDigital (DotMailer).
 ### Codes:
 
 #### Issue with Abandoned Browsering Special Price as null.
-<!--{% if PageValues.product_specialprice > 0.00 %}-->
-  <p class="productfield product-price_incl_tax" style="color: rgb(116, 121, 101);"><strike>{{ PageValues.product_price_incl_tax | money: 'ga-IE' }}</strike>               </p>
-  <p class="productfield product-specialprice_incl_tax" style="color: rgb(6, 6, 6);"><b>{{ PageValues.product_specialprice_incl_tax | money: 'ga-IE' }}</b></p>
-<!--{% else %}-->
-  <p style="color: rgb(6, 6, 6);" text-decoration:none;"><b>{{ PageValues.product_price_incl_tax | money: 'ga-IE' }}</b></p>
-<!--{% endif %}-->
+    <div>
+      <!--{% if PageValues.product_specialprice > 0.00 %}-->
+        <p class="productfield product-price_incl_tax" style="color: rgb(116, 121, 101);"><strike>{{ PageValues.product_price_incl_tax | money: 'ga-IE' }}</strike>               </p>
+        <p class="productfield product-specialprice_incl_tax" style="color: rgb(6, 6, 6);"><b>{{ PageValues.product_specialprice_incl_tax | money: 'ga-IE' }}</b></p>
+      <!--{% else %}-->
+        <p style="color: rgb(6, 6, 6);" text-decoration:none;"><b>{{ PageValues.product_price_incl_tax | money: 'ga-IE' }}</b></p>
+      <!--{% endif %}-->
+    </div>
+                                                         
 
     
