@@ -11,3 +11,17 @@ Here I saved some special code for a DotDigital (DotMailer).
 - It should take up to 1 hour to show up as webinsight data on Dotdigital, unfortunately, there isn't a way to push that data manually. 
 - Support is not a technical. It's nice, but not too helpful, so you need to ask them to create a ticket for you and there you will can find Technical team.
 - Programs contact enrolment. DotDigital allow up to around 20-30 mins in extreme cases. Basically, contact can start to pass nodes from 2-30 min. 
+
+
+
+### Codes:
+
+#### Issue with Abandoned Browsering Special Price as null.
+<!--{% if PageValues.product_specialprice > 0.00 %}-->
+  <p class="productfield product-price_incl_tax" style="color: rgb(116, 121, 101);"><strike>{{ PageValues.product_price_incl_tax | money: 'ga-IE' }}</strike>               </p>
+  <p class="productfield product-specialprice_incl_tax" style="color: rgb(6, 6, 6);"><b>{{ PageValues.product_specialprice_incl_tax | money: 'ga-IE' }}</b></p>
+<!--{% else %}-->
+  <p style="color: rgb(6, 6, 6);" text-decoration:none;"><b>{{ PageValues.product_price_incl_tax | money: 'ga-IE' }}</b></p>
+<!--{% endif %}-->
+
+    
