@@ -1,0 +1,21 @@
+{% assign product_recommendations_data = account.insight.ProductRecommendationCollection_9738 | first %} 
+{% assign Products_data = product_recommendations_data.products %} 
+{% assign size = Products_data.size %}
+<div>Size: {{ size }} </div>
+
+
+
+{% assign Product = Products_data[1].product %}
+
+
+<div> Product Name: {{ Product.name }} </div>
+<div> URL: {{ Product.url_pr_9738 }}</div>
+<div> Price: {{ Product.price | money: 'en-GB' }}</div>
+
+
+
+
+<div style="color:red">
+  
+{{ Products_data | json }}
+</div>
