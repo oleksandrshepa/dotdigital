@@ -1,0 +1,26 @@
+{% assign ProductPagesInsights = null %} 
+{% assign webinsightdata = contact.insight.webinsight | sort:"Session_start" | reverse %} 
+<div>
+ cit
+  {{ webinsightdata | json }}
+ {{ webinsightdata.[1] | json }}
+</div>
+
+{% if webinsightdata.size == 0 %} 
+   {% assign webinsightdata = contact.insight.webinsights | sort:"Session_start" | reverse %} 
+{% endif %} 
+
+{% for record in webinsightdata %}	 	 
+{% assign pagesviewed = record.page_viewed %} 	
+{% assign ProductPagesInsights = pagesviewed | where_not: 'custom_page_values.product_sku', nil | distinct: 'custom_page_values' %}	
+
+222
+{{ProductPagesInsights.size}}
+
+{% if ProductPagesInsights.size >0 %}		 
+    {% break %}		 
+{% endif %} 
+{% endfor %} 
+
+
+<div> -------------------------- </div>
