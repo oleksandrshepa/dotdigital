@@ -1,0 +1,1 @@
+{% assign t = account.insight.Catalog_interiorr_de | where: 'sku', '1001264'  %}
