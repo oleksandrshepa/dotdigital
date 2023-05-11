@@ -16,7 +16,8 @@ Here I saved some special code for a DotDigital (DotMailer).
 
 ### Codes:
 
-All liquid code need to be wrapped in "<!-- -->" as it will not work correctly.
+All liquid code need to be wrapped in 
+    <!---{% if a < 2 %}--->
 
 #### Issue with Abandoned Browsering Special Price as null.
     <div>
