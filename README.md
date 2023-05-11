@@ -16,6 +16,8 @@ Here I saved some special code for a DotDigital (DotMailer).
 
 ### Codes:
 
+All liquid code need to be wrapped in <!-- --> as it will not work correctly.
+
 #### Issue with Abandoned Browsering Special Price as null.
     <div>
       <!--{% if PageValues.product_specialprice > 0.00 %}-->
