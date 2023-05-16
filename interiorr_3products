@@ -1,4 +1,21 @@
-<table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="table-layout: auto;" role="presentation">
+<style>
+
+@media screen and (max-width: 504px) {
+    .products-row .stack-column {
+        display: block!important;
+        width: 100%!important;
+        max-width: 100%!important;
+        direction: ltr!important;
+        min-width: 100%!important;
+    }
+}
+
+
+
+</style>
+
+
+<table border="0" cellpadding="0" cellspacing="0" class="products-row ee_columns three-cols ee_element" align="center" width="100%" style="table-layout: auto;" role="presentation">
     <tbody>
         <tr>
             <td align="center" valign="top" class="f-size-0" dir="ltr" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;">
