@@ -14,7 +14,6 @@
 
 </style>
 
-
 <table border="0" cellpadding="0" cellspacing="0" class="products-row ee_columns three-cols ee_element" align="center" width="100%" style="table-layout: auto;" role="presentation">
     <tbody>
         <tr>
@@ -37,7 +36,7 @@
                                                 <td class="element-pad element-bord" style="padding-top: 30px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;">
                                                     <center class="ved_ctr">
                                                         <a href="{{pr_pb1[0].url}}" style="margin: 0px; vertical-align: bottom; display: block;">
-                                                            <img src="{{pr_pb1[0].image_path}}" width="55" alt="{{pr_pb1[0].name}}" style="width: 94%; display: block; max-width: 100%; border-radius: 50%;" class="ee_editable eemissing" border="0">
+                                                            <img src="{{pr_pb1[0].image_path}}" width="180" alt="{{pr_pb1[0].name}}" style="width: 94%; display: block; max-width: 100%; border-radius: 50%;" class="" border="0">
                                                         </a>
                                                     </center>
                                                 </td>
@@ -52,7 +51,7 @@
                                                         <!-- {% if pr_pb1[0].specialprice > 0 %} -->
                                                             <font style="font-family: arial, helvetica, sans-serif; box-sizing: border-box; color: rgb(6, 6, 6); font-weight: 700;">
                                                                 €{{pr_pb1[0].specialprice}} </font>
-                                                            <font style="box-sizing: border-box; text-decoration-line: line-through; color: rgb(96, 96, 96); font-family: arial, helvetica, sans-serif;">€{{pr_pb1[0].price}}</font>
+                                                            <font style="box-sizing: border-box;  text-decoration: line-through; color: rgb(96, 96, 96); font-family: arial, helvetica, sans-serif;">€{{pr_pb1[0].price}}</font>
                                                         <!-- {% else %} -->
                                                             <font style="font-family: arial, helvetica, sans-serif; box-sizing: border-box; color: rgb(6, 6, 6); font-weight: 700;">
                                                                 €{{pr_pb1[0].price}} </font>
@@ -65,7 +64,7 @@
                                     <div class="ved_control ved_control_element ved_control_textelement ved_minimal_title_bar ved_width_small"><div class="ved_title"><span class="ved_icon"></span><span class="ved_name">Text</span></div><table cellpadding="0" cellspacing="0" class="col-font-reset ee_element ee_textelement" width="100%" ee-type="element" data-title="Text" role="presentation" style="table-layout: auto;">
                                         <tbody>
                                             <tr>
-                                                <td valign="top" align="left" class="element-pad element-bord" style="padding-top: 0px; padding-right: 5px; padding-bottom: 0px; padding-left: 5px;">
+                                                <td valign="top" align="left" class="element-pad element-bord" style="padding-top: 0px; padding-right: 5px; padding-bottom: 20px; padding-left: 5px;">
                                                     <p style="text-align: center; line-height: 18px; box-sizing: border-box; font-size: 12px; font-weight: 700; margin-top: 0; padding-top: 5px;">
                                                         {{pr_pb1[0].name}}
                                                     </p>
@@ -86,3 +85,4 @@
         </tr>
     </tbody>
 </table>
+
