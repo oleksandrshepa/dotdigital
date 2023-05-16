@@ -1,33 +1,33 @@
-<table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" class="row ee_columns three-cols ee_element" ee-type="container" data-title="Columns" role="presentation" style="table-layout: auto;">
+<table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="table-layout: auto;" role="presentation">
     <tbody>
         <tr>
-            <td align="center" valign="top" class="row-inner f-size-0 element-pad" dir="ltr" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;">
-                <!--[if mso]><table border="0" cellspacing="0" cellpadding="0" align="center" style="width:600px;" width="600"><tr><![endif]-->
+            <td align="center" valign="top" class="f-size-0" dir="ltr" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;">
+                <!--*[*if mso*]*><table border="0" cellspacing="0" cellpadding="0" align="center" style="width:600px;" width="600"><tr><!*[*endif*]*-->
 
                 <!-- {% assign skus_pb1 = "1001264,0000094144,1301530" | split: "," %} -->
                 <!-- {% for item in skus_pb1 %} -->
                 <!-- {% assign pr_pb1 = account.insight.Catalog_interiorr_eu | where: 'sku', item  %} -->
 
-                <!--[if mso]><td align="left" valign="top" style="width:200px;" width="200"><![endif]-->
-                <div class="stack-column stack-column-width" ee-percent-width="33.333333" style="width: 33.333333%; max-width: 33.333333%; min-width: 100%;">
+                <!--*[*if mso*]*><td align="left" valign="top" style="width:200px;" width="200"><!*[*endif*]*-->
+                <div class="stack-column stack-column-width" ee-percent-width="33.333333" style="width: 33.333333%; max-width: 33.333333%;  min-width: 0!important;">
                     <table cellspacing="0" cellpadding="0" border="0" width="100%" role="presentation" style="table-layout: auto;">
                         <tbody>
                             <tr>
-                                <td dir="ltr" class="col-inner ee_dropzone" align="left">
-                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="col-font-reset ee_element ee_imageelement" ee-type="element" data-title="Image" role="presentation" style="table-layout: auto;">
+                                <td dir="ltr" class="col-inner ee_dropzone" align="left"><div class="ved_dropzone"><div class="ved_z_loc"></div><div class="ved_z_show ved_width_small"><div class="dz-message ved_icon ved_icon_columns"></div></div></div>
+                                    <div class="ved_control ved_control_element ved_control_imageelement ved_minimal_title_bar ved_width_small"><div class="ved_title"><span class="ved_icon"></span><span class="ved_name">Image</span></div><table width="100%" border="0" cellpadding="0" cellspacing="0" class="col-font-reset ee_element ee_imageelement" ee-type="element" data-title="Image" role="presentation" style="table-layout: auto;">
                                         <tbody>
                                             <tr>
                                                 <td class="element-pad element-bord" style="padding-top: 30px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;">
                                                     <center class="ved_ctr">
                                                         <a href="{{pr_pb1[0].url}}" style="margin: 0px; vertical-align: bottom; display: block;">
-                                                            <img src="{{pr_pb1[0].image_path}}" width="200" alt="{{pr_pb1[0].name}}" style="width: 94%; display: block; max-width: 94%; border-radius: 50%;" class="ee_editable" border="0" />
+                                                            <img src="{{pr_pb1[0].image_path}}" width="55" alt="{{pr_pb1[0].name}}" style="width: 94%; display: block; max-width: 100%; border-radius: 50%;" class="ee_editable eemissing" border="0">
                                                         </a>
                                                     </center>
                                                 </td>
                                             </tr>
                                         </tbody>
-                                    </table>
-                                    <table cellpadding="0" cellspacing="0" class="col-font-reset ee_element ee_textelement" width="100%" ee-type="element" data-title="Text" role="presentation" style="table-layout: auto;">
+                                    </table></div><div class="ved_dropzone"><div class="ved_z_loc"></div><div class="ved_z_show ved_width_small"><div class="dz-message ved_icon ved_icon_columns"></div></div></div>
+                                    <div class="ved_control ved_control_element ved_control_textelement ved_minimal_title_bar ved_width_small"><div class="ved_title"><span class="ved_icon"></span><span class="ved_name">Text</span></div><table cellpadding="0" cellspacing="0" class="col-font-reset ee_element ee_textelement" width="100%" ee-type="element" data-title="Text" role="presentation" style="table-layout: auto;">
                                         <tbody>
                                             <tr>
                                                 <td valign="top" align="left" class="element-pad element-bord" style="padding-top: 10px; padding-right: 10px; padding-bottom: 4px; padding-left: 10px;">
@@ -44,8 +44,8 @@
                                                 </td>
                                             </tr>
                                         </tbody>
-                                    </table>
-                                    <table cellpadding="0" cellspacing="0" class="col-font-reset ee_element ee_textelement" width="100%" ee-type="element" data-title="Text" role="presentation" style="table-layout: auto;">
+                                    </table></div><div class="ved_dropzone"><div class="ved_z_loc"></div><div class="ved_z_show ved_width_small"><div class="dz-message ved_icon ved_icon_columns"></div></div></div>
+                                    <div class="ved_control ved_control_element ved_control_textelement ved_minimal_title_bar ved_width_small"><div class="ved_title"><span class="ved_icon"></span><span class="ved_name">Text</span></div><table cellpadding="0" cellspacing="0" class="col-font-reset ee_element ee_textelement" width="100%" ee-type="element" data-title="Text" role="presentation" style="table-layout: auto;">
                                         <tbody>
                                             <tr>
                                                 <td valign="top" align="left" class="element-pad element-bord" style="padding-top: 0px; padding-right: 5px; padding-bottom: 0px; padding-left: 5px;">
@@ -55,16 +55,16 @@
                                                 </td>
                                             </tr>
                                         </tbody>
-                                    </table>
+                                    </table></div><div class="ved_dropzone"><div class="ved_z_loc"></div><div class="ved_z_show ved_width_small"><div class="dz-message ved_icon ved_icon_columns"></div></div></div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <!--[if mso]></td><![endif]-->
+                <!--*[*if mso*]*></td><!*[*endif*]*-->
                 <!-- {% endfor %} -->
 
-                <!--[if mso]></tr></table><![endif]-->
+                <!--*[*if mso*]*></tr></table><!*[*endif*]*-->
             </td>
         </tr>
     </tbody>
