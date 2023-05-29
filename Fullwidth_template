@@ -6,7 +6,7 @@
 <!--[if !mso]><!-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&amp;display=swap" rel="stylesheet"><!--<![endif]-->
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&amp;display=swap" rel="stylesheet"><!--<![endif]-->
 <!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG></o:AllowPNG><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]--><style type="text/css" id="editor_required_block">body,html{Margin:0!important;padding:0!important;width:100%!important}
 h1,h2,h3,h4{Margin:0}
 *{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
@@ -231,14 +231,22 @@ body, td { font-family: Arial, sans-serif; }
                   width: 100%!important;
               }
           }
-          </style></head>
+          </style>
+<style>
+   /* Custom Styles @@@ */
+  .email-logo {
+    width:180px!important;
+    height:auto;
+  }
+  .button-td .button-a a {letter-spacing:1px;}
+</style></head>
 <body><!-- Easy Editor -->
       <table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" class="border-collapse ee_responsive_campaign" style="table-layout: auto;" ee-show-font-styles="" ee-template-version="8.4" ee-mobile-first="true" role="presentation">
         <tbody>
           <tr>
             <td valign="top">
               <center class="width-100">
-                <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" class="email-body" style="background-color: #f6f6f4;table-layout: auto;" role="presentation">
+                <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" class="email-body" style="background-color: #ffffff;table-layout: auto;" role="presentation">
                   <tbody>
                     <tr>
                       <td class="email-full-width margin-0-auto">
@@ -299,15 +307,6 @@ body, td { font-family: Arial, sans-serif; }
                           </tbody>
                         </table>
                         <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
-      
-                       
-      
-      
-                        
-      
-      
-      
-      
                       </td>
                     </tr>
                   </tbody>
