@@ -1,0 +1,49 @@
+
+
+<!-- 
+    {% assign ProductPagesInsights = null %} 
+    {% assign webinsightdata = contact.insight.webinsight | sort:"Session_start" | reverse %} 
+    
+    {% if webinsightdata.size == 0 %} 
+        {% assign webinsightdata = contact.insight.webinsights | sort:"Session_start" | reverse %} 
+    {% endif %} 
+    
+    {% for record in webinsightdata %}	 	 
+        {% assign pagesviewed = record.page_viewed %}
+        {% assign ProductPagesInsights = pagesviewed | where_not: 'custom_page_values.product_sku', nil | distinct: 'custom_page_values' %}	 
+        {% if ProductPagesInsights.size >0 %}
+            {% break %}		 
+        {% endif %} 
+    {% endfor %} 
+    
+    {% if ProductPagesInsights != null %} -->
+    
+    <!--REPEATPRODUCTSLIQUID
+            
+            {% assign nProducts = ProductPagesInsights.size %}
+            {% if nProducts > 6 %}
+                {% assign nProducts = 6 %}
+            {% endif %}
+
+            {% for page in ProductPagesInsights | limit: nProducts %} 
+                {% assign PageValues = page.custom_page_values %}
+                {% if PageValues %} -->                
+                    
+                    <!--{% if PageValues.product_name | nil %}-->
+                        <p class="productfield product-name">
+                            <a href="{{ PageValues.product_url  }}" style="text-decoration: none; color: rgb(0, 0, 0);"><b>{{ PageValues.product_name }}</b></a>
+                        </p>
+                    <!--{% endif %}-->
+                
+                
+                    <!--{% if PageValues.product_specialprice > 0.00 %}-->
+                        <p class="productfield product-price_incl_tax" style="color: rgb(116, 121, 101);"><strike>{{ PageValues.product_price_incl_tax | money: 'ga-IE' }}</strike></p>
+                        <p class="productfield product-specialprice_incl_tax" style="color: rgb(6, 6, 6);"><b>{{ PageValues.product_specialprice_incl_tax | money: 'ga-IE' }}</b></p>
+                    <!--{% else %}-->
+                        <p style="color: rgb(6, 6, 6);" text-decoration:none;"=""><b>{{ PageValues.product_price_incl_tax | money: 'ga-IE' }}</b></p>
+                    <!--{% endif %}-->
+                <!-- {% endif %}
+            {% endfor %} -->
+
+    <!-- {% endif %} -->
+    <!-- {% assign ProductPagesInsights = null %} -->
