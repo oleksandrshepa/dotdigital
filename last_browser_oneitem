@@ -1,0 +1,100 @@
+<!---
+    {% assign ProductPagesInsights = null %} 
+    {% assign webinsightdata = contact.insight.webinsight | sort:"Session_start" | reverse %} 
+    
+    {% if webinsightdata.size == 0 %} 
+        {% assign webinsightdata = contact.insight.webinsights | sort:"Session_start" | reverse %} 
+    {% endif %} 
+    
+    {% for record in webinsightdata %}	 	 
+        {% assign pagesviewed = record.page_viewed %}
+        {% assign ProductPagesInsights = pagesviewed | where_not: 'custom_page_values.product_sku', nil | distinct: 'custom_page_values' %}	 
+        {% if ProductPagesInsights.size >0 %}
+            {% break %}		 
+        {% endif %} 
+    {% endfor %} 
+    
+    {% if ProductPagesInsights != null %} --->
+
+   <!--REPEATPRODUCTSLIQUID
+            
+            {% for page in ProductPagesInsights | limit: 1 %} 
+                {% assign PageValues = page.custom_page_values %}
+                {% if PageValues %} -->    
+
+
+                    <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" class="row ee_columns one-cols ee_element" ee-type="container" data-title="Columns" role="presentation" style="table-layout: auto;">
+                        <tbody>
+                            <tr>
+                                <td align="center" valign="top" class="row-inner f-size-0 element-pad col-inner" dir="ltr">
+                                    <!--[if mso]><table border="0" cellspacing="0" cellpadding="0" align="center" style="width:560px;" width="560"><tr><td align="left" valign="top" style="width:560px;" width="560"><![endif]-->
+                                    <div class="stack-column stack-column-width" ee-percent-width="100" style="width: 100%; max-width: 100%; min-width: 100%;">
+                                        <table cellspacing="0" cellpadding="0" border="0" width="100%" class="last_br_custom" role="presentation" style="table-layout: auto;">
+                                            <tbody>
+                                                <tr>
+                                                    <td dir="ltr" class="col-inner ee_dropzone" align="left"><div class="ved_dropzone"><div class="ved_z_loc"></div><div class="ved_z_show"><div class="dz-message ved_icon ved_icon_columns"></div></div></div>  
+
+
+                                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" class="col-font-reset
+                                                        " role="presentation" style="table-layout: auto;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="element-pad element-bord">
+                                                                    <center class="ved_ctr">
+                                                                        <a href="{{ PageValues.product_url  }}" style="text-decoration: none; margin-left: 0px; margin-right: 0px; margin-top: 0px; vertical-align: bottom; display: block;">
+                                                                            <img src="{{ PageValues.product_image_path }}" width="" alt="" style="width: 264px; display: inline-block; max-width: 100%; margin: 0px; vertical-align: bottom;" class="">
+                                                                        </a>
+                                                                    </center>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table><div class="ved_dropzone"><div class="ved_z_loc"></div><div class="ved_z_show"><div class="dz-message ved_icon ved_icon_columns"></div></div></div>
+
+                                                    <div class="ved_control ved_control_element ved_minimal_title_bar"><div class="ved_title"><span class="ved_icon"></span><span class="ved_name">Text</span></div><table cellpadding="0" cellspacing="0" class="col-font-reset ee_element" width="100%" ee-type="element" data-title="Text" role="presentation" style="table-layout: auto;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" align="left" class="element-pad element-bord">
+                                                                <div style="text-align: center;">
+                                                                    <!--{% if PageValues.product_name | nil %}-->
+                                                                        <p class="productfield product-name">
+                                                                            <a href="{{ PageValues.product_url  }}" style="text-decoration: none; color: rgb(0, 0, 0); font-size:12px"><b style="max-width: 301px;
+                                                                            margin: 0 auto;
+                                                                            display: block;">{{ PageValues.product_name }}</b></a>
+                                                                        </p>
+                                                                    <!--{% endif %}-->
+                                                                </div>
+                                                            <div style="text-align: center;">
+                                                                <!--{% if PageValues.product_specialprice > 0.00 %}-->
+                                                                    <span class="productfield product-specialprice_incl_tax" style="color: rgb(6, 6, 6); font-size:12px;">{{ PageValues.product_specialprice_incl_tax | money: 'ga-IE' }}</span>&nbsp;&nbsp;
+                                                                    <span class="productfield product-price_incl_tax" style="color: rgb(116, 121, 101); font-size:12px;"><strike>{{ PageValues.product_price_incl_tax | money: 'ga-IE' }}</strike></span>
+                                                                <!--{% else %}-->
+                                                                    <span style="color: rgb(6, 6, 6); text-decoration:none; font-size:12px;">{{ PageValues.product_price_incl_tax | money: 'ga-IE' }}</span>
+                                                                <!--{% endif %}-->
+                                                            </div>
+                                                            <div style="text-align:center; padding-top:25px;">
+                                                                <a href="{{ PageValues.product_url  }}" style="display:inline-block; text-decoration:none;border-radius: 4px;
+                                                                background: #000; border-top:2px solid #000;border-right:2px solid #000;border-bottom:2px solid #000;border-left:2px solid #000; padding-top: 8px;padding-right: 25px;padding-bottom: 8px;padding-left: 25px; color:#fff; font-size:14px;">Shop now</a>
+                                                            </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table></div><div class="ved_dropzone"><div class="ved_z_loc"></div><div class="ved_z_show"><div class="dz-message ved_icon ved_icon_columns"></div></div></div>
+                                                <!-- {% endif %} -->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--[if mso]></td></tr></table><![endif]-->
+                        </td>
+                    </tr>
+                </tbody>
+                    </table>
+    <!-- {% endfor %} -->
+<!-- {% endif %} -->
+<!-- {% assign ProductPagesInsights = null %} -->
+
+
+
+                                                                        
+                                                                       
