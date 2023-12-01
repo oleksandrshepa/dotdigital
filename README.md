@@ -20,6 +20,12 @@ Here I saved some special code for a DotDigital (DotMailer).
 All liquid code need to be wrapped in 
     <!---{% if a < 2 %}--->
 
+#### Liquid code snippets
+
+Show in json value.
+{{ value | json }}
+    
+
 #### Issue with Abandoned Browsering Special Price as null.
     <div>
       <!--{% if PageValues.product_specialprice > 0.00 %}-->
