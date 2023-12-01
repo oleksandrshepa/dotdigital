@@ -1,0 +1,14 @@
+<!--{% assign Cartinsight_data = contact.insight.Cartinsight | sort: 'ModifiedDate' | reverse %}{% for Cartinsight in Cartinsight_data | limit:1 %}-->
+ <!-- {% assign lineItems_data = Cartinsight.lineItems | sort: 'name' %}-->
+
+ <div>Products</div><br>
+
+<!-- {% for lineItems in lineItems_data %} -->
+	 Index: {{forloop.index}}<br>
+     Item name: {{lineItems.name}} <br>
+     Qty: {{lineItems.quantity}}<br>
+<!--{% endfor %}-->
+<br>
+<br>
+Cart Subtotal: {{Cartinsight.subtotal | money: Cartinsight.currency }}
+<!--{% endfor %}-->
