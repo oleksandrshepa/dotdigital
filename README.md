@@ -14,6 +14,8 @@ Here I saved some special code for a DotDigital (DotMailer).
 - DD roadmap - https://r1.dotdigital-pages.com/p/35E-386/dotdigital-roadmap
 
 
+### Useful links:
+https://support.dotdigital.com/en/articles/8198944-filter-liquid-outputs
 
 ### Codes:
 
