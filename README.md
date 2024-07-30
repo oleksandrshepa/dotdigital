@@ -17,6 +17,8 @@ Here I saved some special code for a DotDigital (DotMailer).
 ### Useful links:
 https://support.dotdigital.com/en/articles/8198944-filter-liquid-outputs
 
+https://r1.dotdigital-pages.com/p/35E-386/dotdigital-roadmap 
+
 ### Codes:
 
 All liquid code need to be wrapped in 
