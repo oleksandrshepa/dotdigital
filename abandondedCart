@@ -1,0 +1,59 @@
+
+
+<!--{% assign utm_special = "?utm_campaign=149064_ABCart_v2_Email1_EU&utm_medium=email&utm_source=dotdigital" %}-->
+
+<!--
+    {% assign Cartinsight_data = contact.insight.Cartinsight | sort: 'ModifiedDate' | reverse %}
+    {% for Cartinsight in Cartinsight_data | limit:1 %}
+-->
+
+    <!--
+        {% assign lineItems_data = Cartinsight.lineItems | sort: 'name' %}
+        {% for lineItems in lineItems_data %}
+    -->
+    
+
+    {{lineItems.producturl}}{{utm_special}}
+    
+    <img src="{{lineItems.imageUrl}}">"
+    {{lineItems.name}}
+    {{lineItems.quantity}}
+
+    <!-- PRICE 
+         {% if lineitems.saleprice_incl_tax != null and lineitems.saleprice_incl_tax > 0 and lineitems.saleprice_incl_tax < lineItems.unitprice %} -->
+        <font
+        style="font-size: 12px;">
+        {{
+        lineitems.saleprice_incl_tax
+        | money:
+        Cartinsight.currency
+        }}
+    </font>
+    <!-- {% else %} -->
+    <font
+        style="font-size: 12px;">
+        {{
+        lineItems.unitprice
+        | money:
+        Cartinsight.currency
+        }}
+    </font>
+    <!-- {% endif %} -->
+    <!-- {% if lineitems.saleprice_incl_tax != null and lineitems.saleprice_incl_tax > 0 and lineitems.saleprice_incl_tax < lineItems.unitprice %} -->
+    &nbsp;&nbsp;<strike>
+        <font
+            style="font-size: 12px;">
+            {{lineItems.unitPrice
+            | money:
+            Cartinsight.currency
+            }}</font>
+    </strike>
+    <!-- {% endif %}-->
+
+
+<!--{% endfor %}-->
+
+{{Cartinsight.grandtotal | money: Cartinsight.currency}}
+{{CartInsight.cartUrl}}{{utm_special}}
+
+<!--{% endfor %}-->
