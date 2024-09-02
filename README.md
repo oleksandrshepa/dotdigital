@@ -28,6 +28,15 @@ All liquid code need to be wrapped in
 
 Show in json value.
 {{ value | json }}
+
+
+##### Cart link
+{% assign SpecialCartLink= "" %}
+  {% assign Cartinsight_data = contact.insight.Cartinsight | sort: 'ModifiedDate' | reverse %}
+    {% for Cartinsight in Cartinsight_data | limit:1 %}
+  		{% assign SpecialCartLink = CartInsight.cartUrl %}
+  	{% break %}
+{% endfor %}
     
 
 #### Issue with Abandoned Browsering Special Price as null.
