@@ -31,12 +31,15 @@ Show in json value.
 
 
 ##### Cart link
+```
 {% assign SpecialCartLink= "" %}
-  {% assign Cartinsight_data = contact.insight.Cartinsight | sort: 'ModifiedDate' | reverse %}
-    {% for Cartinsight in Cartinsight_data | limit:1 %}
-  		{% assign SpecialCartLink = CartInsight.cartUrl %}
-  	{% break %}
+{% assign Cartinsight_data = contact.insight.Cartinsight | sort: 'ModifiedDate' | reverse %}
+
+{% for Cartinsight in Cartinsight_data | limit:1 %}
+    {% assign SpecialCartLink = CartInsight.cartUrl %}
+{% break %}
 {% endfor %}
+```
     
 
 #### Issue with Abandoned Browsering Special Price as null.
