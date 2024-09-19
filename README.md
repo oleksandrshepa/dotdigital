@@ -12,7 +12,7 @@ Here I saved some special code for a DotDigital (DotMailer).
 - Support is not a technical. It's nice, but not too helpful, so you need to ask them to create a ticket for you and there you will can find Technical team.
 - Programs contact enrolment. DotDigital allow up to around 20-30 mins in extreme cases. Basically, contact can start to pass nodes from 2-30 min. 
 - DD roadmap - https://r1.dotdigital-pages.com/p/35E-386/dotdigital-roadmap
-
+- Email report is show data by "last sent date". Email report (Beta) - show data for "specific range"
 
 ### Useful links:
 https://support.dotdigital.com/en/articles/8198944-filter-liquid-outputs
